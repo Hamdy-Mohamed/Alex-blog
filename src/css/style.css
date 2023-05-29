@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+  outline: none;
+  user-zoom: none;
+}
+:root {
+  --color_tx: #eee;
+  --color_txHover: #858585;
+  --Yellow_alex: #ffd500;
+  --white_alex: #ffffff;
+  --blue_alex: #57abdf;
+}
+::selection {
+  background: var(--Yellow_alex);
+  color: var(--blue_alex);
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+  background: #eee;
+}
+section {
+  min-height: 100vh;
+}
+.first {
+  background-image: linear-gradient(
+    to left top,
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex),
+    #8fd4ff,
+    var(--blue_alex),
+    var(--blue_alex),
+    var(--blue_alex)
+  );
+  margin: 1rem;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  min-height: 81vh;
+}
+nav {
+  background: rgb(87, 171, 223);
+  background: radial-gradient(
+    circle,
+    rgba(87, 171, 223, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 8rem;
+  margin-top: 0.5rem;
+  user-select: none;
+}
+ul {
+  padding-right: 4rem;
+}
+ul a {
+  margin: 0 3rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  color: var(--color_tx);
+}
+ul a:hover {
+  color: var(--color_txHover);
+}
+
+.title {
+  font-size: 7rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+span {
+  animation: change_color 5s infinite;
+}
+
+@keyframes change_color {
+  0%,
+  100% {
+    color: white;
+  }
+  20% {
+    color: var(--Yellow_alex);
+  }
+  40% {
+    color: var(--Yellow_alex);
+  }
+  60% {
+    color: var(--Yellow_alex);
+  }
+  80% {
+    color: var(--white_alex);
+  }
+}
+
+.support{
+  position: absolute;
+  top: 20%;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 634px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 522px) {
+  html {
+    font-size: 10px;
+  }
+  ul a {
+    margin: 0.2rem;
+  }
+}
+@media only screen and (min-width:770px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 381px) {
+  html {
+    font-size: 9px;
+  }
+  ul a {
+    margin: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 9px;
+  }
+  ul a{
+    margin: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1796px) {
+  html {
+    font-size: 20px;
+  }
+}
