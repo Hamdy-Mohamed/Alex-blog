@@ -1,0 +1,1 @@
+let scrollBtn=document.querySelector(".btn");scrollBtn.addEventListener("click",function(){window.scrollBy(0,1700)});
